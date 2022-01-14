@@ -1,0 +1,65 @@
+*** FATAL ***
+fatal source: 0 (INTERNAL_ERROR_CORE)
+fatal code: 30 (INTERNAL_ERROR_BAD_THREAD_DISPATCH_DISABLE_LEVEL)
+RTEMS version: 5.0.0.645dbc5fccd8b73e12ca17ab35962fe751854913
+RTEMS tools: 7.5.0 20191114 (RTEMS 5, RSB 5 (803d42cda7b3), Newlib 7947581)
+executing thread ID: 0x08b010010
+executing thread name:
+Printing a stack trace for your convenience :-)
+
+*** FATAL ***
+fatal source: 9 (RTEMS_FATAL_SOURCE_EXCEPTION)
+exception vector 3 (0x3)
+  next PC or address of fault = 0x0025cb8c
+  saved MSR = 0x00001032
+  context = interrupt, ISR nest level = 1
+  thread dispatch disable level = 2
+  R0  = 0x00254f84 R1  = 0x00494758 R2  = 0x00000000 R3  = 0x00000030
+  R4  = 0x00000000 R5  = 0x002bca1c R6  = 0x004947b0 R7  = 0x0025dd08
+  R8  = 0x004947a0 R9  = 0xa5a5a5a5 R10 = 0x004947a0 R11 = 0x00000000
+  R12 = 0x40842402 R13 = 0x003006c0 R14 = 0x00ef1640 R15 = 0x00000000
+  R16 = 0x00000000 R17 = 0x00000000 R18 = 0x00000000 R19 = 0x00000000
+  R20 = 0x00000000 R21 = 0x00000000 R22 = 0x00000000 R23 = 0x00000000
+  R24 = 0x00336560 R25 = 0x00000000 R26 = 0x002a41b0 R27 = 0x00135580
+  R28 = 0x004948a8 R29 = 0x00494760 R30 = 0x0000001e R31 = 0x003174e8
+  CR  = 0x40842408
+  CTR = 0x00000017
+  XER = 0x20000000
+  LR  = 0x00254f88
+  DAR = 0xa5a5a5a9
+  executing thread ID = 0x0b010010, name =
+Stack Trace:
+  IP: 0x0025cb8c, LR: 0x00254f88
+--^ 0x00254f84--^ 0x00254ec4--^ 0x00135648--^ 0x00135854--^ 0x001358ac
+--^ 0x001321f4--^ 0x0012aa4c--^ 0x0010b08c--^ 0x001039e8--^ 0x000f502c
+--^ 0x000fd6cc--^ 0x0001360c--^ 0x0025f628--^ 0x00262f64--^ 0x0025dd08
+
+*** FATAL ***
+fatal source: 9 (RTEMS_FATAL_SOURCE_EXCEPTION)
+exception vector 3 (0x3)
+  next PC or address of fault = 0x0025d240
+  saved MSR = 0x00001032
+  context = interrupt, ISR nest level = 1
+  thread dispatch disable level = 2
+  R0  = 0x0025d270 R1  = 0x004945e8 R2  = 0x00000000 R3  = 0x002bdd8c
+  R4  = 0x00000000 R5  = 0x002784e8 R6  = 0x00494578 R7  = 0x002784ea
+  R8  = 0x002784e9 R9  = 0xa5a5a5a5 R10 = 0x800003fd R11 = 0x00000000
+  R12 = 0x40442202 R13 = 0x003006c0 R14 = 0x004946a8 R15 = 0x00000000
+  R16 = 0x00000000 R17 = 0x00000000 R18 = 0x00000000 R19 = 0x00000000
+  R20 = 0x00000000 R21 = 0x00000000 R22 = 0x00000000 R23 = 0x00000000
+  R24 = 0x00336560 R25 = 0x00000000 R26 = 0x002a41b0 R27 = 0x002784e8
+  R28 = 0xcccccccd R29 = 0x002bdd8c R30 = 0x00494a10 R31 = 0x00000010
+  CR  = 0x40442808
+  CTR = 0x00254fe8
+  XER = 0x20000000
+  LR  = 0x0025d270
+  DAR = 0xa5a5a5a9
+  executing thread ID = 0x0b010010, name =
+Stack Trace:
+  IP: 0x0025d240, LR: 0x0025d270
+--^ 0x00254f64--^ 0x00135648--^ 0x00135854--^ 0x002662f0--^ 0x0025de68
+--^ 0x40842402--^ 0x00254f84--^ 0x00254ec4--^ 0x00135648--^ 0x00135854
+--^ 0x001358ac--^ 0x001321f4--^ 0x0012aa4c--^ 0x0010b08c--^ 0x001039e8
+--^ 0x000f502c--^ 0x000fd6cc--^ 0x0001360c--^ 0x0025f628--^ 0x00262f64
+--^ 0x0025dd08
+
