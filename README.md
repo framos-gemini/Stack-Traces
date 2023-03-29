@@ -9,5 +9,5 @@ By default the addr2line tool for rtems is being used. Inside the docker contain
 The script is executed as follows: ./analyseStackTrace \<pathToBinaryFile\> \<pathToStackTraceFile\> [CSV] 
 Parameters:
   - **pathToBinaryFile**: non-optional parameter. Path to the executable file, i.e. the binary file of your application. For example, the crcs binary file it would be /gem_test/framos/crcs_cp/bin/RTEMS-mvme2700/crcs-cp-ioc
-  - **pathToStackTraceFile**: Non-optional parameter. Path to the file containing the Stack Trace copied from the telnet. A small excerpt is pasted below. See example file /tmp/StacTracer.txt for more details.
+  - **pathToStackTraceFile**: Non-optional parameter. Path to the file containing the Stack Trace copied from the telnet. See example file StacTracer.txt for more details.
   - **CSV**: Optional parameter. This parameter is used to export the result to CSV format. It will allow you to copy it to an excel sheet and send it in a more readable format to other colleagues.  
